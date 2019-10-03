@@ -1,19 +1,51 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Hello CandidateController!{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('formCss') }}
 
+{% endblock %}
 {% block body %}
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ name }} ! </h1>
+
+
+    <div class="profile-wrapper mx-auto">
+        <div class="profile-body d-flex justify-content-center align-content-center">
+            <div class="profile-details">
+                <p class="description">Thanks for signing up!</p>
+                <p>We're glad you're here</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="actions mt-2">
+
+            <button class="secondary btn-wlc">Check your profile</button>
+        </div>
+
+    </div>
+
+
 
 </div>
-{% endblock %}
+   <div class="example-wrapper" id="profile" style="display: none">
+       <div class="profile-wrapper center" >
+           <div class="profile-body">
+               <img src="http://images.equipboard.com/uploads/user/image/524/big_calvin-harris.jpg?v=1466072866" alt="" />
+               <div class="profile-details">
+                   <p class="description" id="name"></p>
+                   <p id="email">email: </p>
+               </div>
+           </div>
 
+       </div>
+   </div>
+
+{% endblock %}
 {% block javascripts %}
     {{ encore_entry_script_tags('candidate') }}
 {% endblock %}

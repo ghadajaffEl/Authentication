@@ -27,6 +27,7 @@ Encore
     .addEntry('candidate', './assets/js/candidate.js')
     //.addEntry('page2', './assets/js/page2.js')
     .addStyleEntry('formCss','./assets/css/formCss.css')
+    .addStyleEntry('listPost','./assets/css/listPost.css')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()

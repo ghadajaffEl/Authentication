@@ -66,3 +66,111 @@ body {
     font-size: 14px;
 }
 
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.profile-wrapper {
+    max-width: 500px;
+    width: 500px;
+    height: 150px;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-body {
+    background: -moz-linear-gradient(320deg, rgba(31,41,125,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(31,41,125,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(320deg, rgba(31,41,125,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(320deg, rgba(31,41,125,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(320deg, rgba(31,41,125,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+    background: linear-gradient(130deg, rgba(31,41,125,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+    height: 100px;
+}
+
+.profile-body img {
+    margin: 15px 25px;
+    height: 80%;
+    border: 3px solid white;
+    border-radius: 100%;
+    vertical-align: top;
+    float:left
+}
+
+.profile-body img:after {
+    clear: both;
+}
+
+.profile-details {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    color: white;
+}
+
+.profile-details:after {
+    clear: both;
+}
+
+.profile-details h1 {
+    margin-bottom: 0.1em;
+}
+
+.profile-details .description {
+    margin: 0;
+    padding-bottom: 0.3em;
+}
+
+.profile-details ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-details ul li, .profile-details .item {
+    display: inline;
+}
+
+.clearfix {
+    clear: both;
+    margin:0;
+    padding: 0;
+}
+
+.actions {
+    height: 60px;
+}
+
+.actions:after {
+    clear: both;
+    margin:0;
+    padding: 0;
+}
+
+.actions {
+    text-align: center;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    width: 45%;
+    height: 35px;
+    color: white;
+}
+
+.actions button.primary {
+    background: #0B607F;
+}
+
+.actions button.secondary {
+    background: #037880;
+}
+* {
+    font-family: 'Lato', sans-serif;
+}
