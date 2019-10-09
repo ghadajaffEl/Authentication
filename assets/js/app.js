@@ -13,4 +13,5 @@ const $ = require('jquery');
 global.$ = global.jQuery = $;
 require('bootstrap/dist/css/bootstrap.css');
 require('bootstrap/dist/js/bootstrap');
-
+require( 'datatables.net' );
+require('datatables.net-dt/css/jquery.dataTables.css');
